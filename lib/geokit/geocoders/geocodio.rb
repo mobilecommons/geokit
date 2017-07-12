@@ -47,6 +47,7 @@ module Geokit
         loc.city            = json["address_components"]["city"]
         loc.state           = json["address_components"]["state"]
         loc.zip             = json["address_components"]["zip"]
+        loc.country_code    = json["address_components"]["country"]
         loc.full_address    = json["formatted_address"]
       end
 
