@@ -49,6 +49,7 @@ module Geokit
         loc.zip             = json["address_components"]["zip"]
         loc.country_code    = json["address_components"]["country"]
         loc.full_address    = json["formatted_address"]
+        loc.precision       = json["accuracy_type"]
       end
 
       def self.set_coordinates(json, loc)
