@@ -36,6 +36,7 @@ module Geokit
         loc = new_loc
         set_address_components(json, loc)
         set_coordinates(json, loc)
+        set_congressional_districts(json, loc)
         loc
       end
 
@@ -55,6 +56,11 @@ module Geokit
       def self.set_coordinates(json, loc)
         loc.lat = json["location"]["lat"]
         loc.lng = json["location"]["lng"]
+      end
+
+      def self.set_congressional_districts(json, loc)
+        districts = json["fields"]["congressional_districts"].map{|district| district.district_number}
+        loc.congressional_districts = districts
       end
     end
   end

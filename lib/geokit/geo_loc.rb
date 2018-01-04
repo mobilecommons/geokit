@@ -120,6 +120,14 @@ module Geokit
       end
     end
 
+    def congressional_districts=(districts)
+      @congresssional_districts = districts if !districts.nil?
+    end
+
+    def congressional_districts
+      @congressional_districts if @congressional_districts
+    end
+
     # Returns a comma-delimited string consisting of the street address, city,
     # state, zip, and country code.  Only includes those attributes that are
     # non-blank.

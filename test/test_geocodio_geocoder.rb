@@ -30,4 +30,15 @@ class GeocodioGeocoderTest < BaseGeocoderTest #:nodoc: all
     assert_equal location.lat, 37.331669
     assert_equal location.lng, -122.03074
   end
+
+  def test_geocodio_geocode_congressional_districts
+    VCR.use_cassette("geocodio_geocode_congressional_districts") do
+      res = Geokit::Geocoders::GeocodioGeocoder.geocode("44646")
+      verify_districts(res)
+    end
+  end
+
+  def verify_districts(res)
+    assert_equal location.congressional_districts, [7, 16]
+  end
 end
