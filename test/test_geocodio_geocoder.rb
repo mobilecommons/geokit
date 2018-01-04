@@ -1,4 +1,5 @@
-require File.join(File.dirname(__FILE__), "helper")
+# require File.join(File.dirname(__FILE__), "helper")
+require_relative 'helper.rb'
 
 Geokit::Geocoders::GeocodioGeocoder.key = "723d41115152d224fd74727df34727c444537f7"
 
@@ -16,7 +17,7 @@ class GeocodioGeocoderTest < BaseGeocoderTest #:nodoc: all
   def test_geocodio_geocode
     VCR.use_cassette("geocodio_geocode") do
       res = Geokit::Geocoders::GeocodioGeocoder.geocode(@full_address)
-      url = "http://api.geocod.io/v1/geocode?q=#{Geokit::Inflector.url_escape(@full_address)}&api_key=723d41115152d224fd74727df34727c444537f7"
+      url = "http://api.geocod.io/v1.1/geocode?q=#{Geokit::Inflector.url_escape(@full_address)}&api_key=723d41115152d224fd74727df34727c444537f7&fields=cd"
 
       assert_url url
 
@@ -27,8 +28,8 @@ class GeocodioGeocoderTest < BaseGeocoderTest #:nodoc: all
   def verify(location)
     assert_equal location.city, "Cupertino"
     assert_equal location.zip, "95014"
-    assert_equal location.lat, 37.331669
-    assert_equal location.lng, -122.03074
+    assert_equal location.lat, 37.330689
+    assert_equal location.lng, -122.02912
   end
 
   def test_geocodio_geocode_congressional_districts
@@ -38,7 +39,7 @@ class GeocodioGeocoderTest < BaseGeocoderTest #:nodoc: all
     end
   end
 
-  def verify_districts(res)
-    assert_equal location.congressional_districts, [7, 16]
+  def verify_districts(location)
+    assert_equal [7, 16],location.congressional_districts
   end
 end

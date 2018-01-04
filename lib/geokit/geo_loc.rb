@@ -28,7 +28,7 @@ module Geokit
     attr_accessor :street_number, :street_name, :street_address, :city, :state,
                   :state_name, :state_code, :zip, :country_code, :country
     attr_accessor :full_address, :all, :district, :province, :sub_premise,
-                  :neighborhood
+                  :neighborhood, :congressional_districts
     # Attributes set upon return from geocoding. Success will be true for
     # successful geocode lookups. The provider will be set to the name of the
     # providing geocoder. Finally, precision is an indicator of the accuracy of
@@ -121,11 +121,11 @@ module Geokit
     end
 
     def congressional_districts=(districts)
-      @congresssional_districts = districts if !districts.nil?
+      @congressional_districts = districts
     end
 
     def congressional_districts
-      @congressional_districts if @congressional_districts
+      @congressional_districts
     end
 
     # Returns a comma-delimited string consisting of the street address, city,

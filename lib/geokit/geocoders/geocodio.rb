@@ -13,6 +13,7 @@ module Geokit
         params = [
           "q=#{Geokit::Inflector.url_escape(address)}",
           "api_key=#{key}",
+          "fields=cd",
         ].join("&")
 
         ["http://api.geocod.io/v1.1/geocode", params].join("?")
@@ -59,8 +60,10 @@ module Geokit
       end
 
       def self.set_congressional_districts(json, loc)
-        districts = json["fields"]["congressional_districts"].map{|district| district.district_number}
-        loc.congressional_districts = districts
+        if json["fields"] && json["fields"]["congressional_districts"]
+          districts = json["fields"]["congressional_districts"].map{|district| district["district_number"]}
+          loc.congressional_districts = districts
+        end
       end
     end
   end

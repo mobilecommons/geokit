@@ -1,0 +1,246 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.geocod.io/v1.1/geocode?api_key=723d41115152d224fd74727df34727c444537f7&fields=cd&q=44646
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      X-Powered-By:
+      - PHP/7.1.9
+      Cache-Control:
+      - no-cache
+      Date:
+      - Thu, 04 Jan 2018 15:25:10 GMT
+      Request-Handler:
+      - api4
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Expose-Headers:
+      - Request-Handler
+    body:
+      encoding: UTF-8
+      string: '{"input":{"address_components":{"zip":"44646","country":"US"},"formatted_address":"44646"},"results":[{"address_components":{"city":"Massillon","county":"Stark
+        County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Massillon,
+        OH 44646","location":{"lat":40.814381,"lng":-81.497182},"accuracy":1,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Lawndale","county":"Stark
+        County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Lawndale,
+        OH 44646","location":{"lat":40.814381,"lng":-81.497182},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Charity
+        Rotch","county":"Stark County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Charity
+        Rotch, OH 44646","location":{"lat":40.818669,"lng":-81.51012},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Clearview","county":"Stark
+        County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Clearview,
+        OH 44646","location":{"lat":40.823669,"lng":-81.516786},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Columbia","county":"Stark
+        County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Columbia,
+        OH 44646","location":{"lat":40.814381,"lng":-81.497182},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Elms
+        Acres","county":"Stark County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Elms
+        Acres, OH 44646","location":{"lat":40.814381,"lng":-81.497182},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Greenwood
+        Acres","county":"Stark County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Greenwood
+        Acres, OH 44646","location":{"lat":40.836168,"lng":-81.518731},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Kendall
+        Heights","county":"Stark County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Kendall
+        Heights, OH 44646","location":{"lat":40.824224,"lng":-81.507897},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Mayflower
+        Village","county":"Stark County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Mayflower
+        Village, OH 44646","location":{"lat":40.814381,"lng":-81.497182},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Perry
+        Heights","county":"Stark County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Perry
+        Heights, OH 44646","location":{"lat":40.795336,"lng":-81.473452},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Moffitt
+        Heights","county":"Stark County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Moffitt
+        Heights, OH 44646","location":{"lat":40.814381,"lng":-81.497182},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Newman","county":"Stark
+        County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Newman,
+        OH 44646","location":{"lat":40.814381,"lng":-81.497182},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Pigeon
+        Run","county":"Stark County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Pigeon
+        Run, OH 44646","location":{"lat":40.814381,"lng":-81.497182},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Walnut
+        Hills","county":"Stark County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Walnut
+        Hills, OH 44646","location":{"lat":40.781447,"lng":-81.500675},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Westarado","county":"Stark
+        County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Westarado,
+        OH 44646","location":{"lat":40.814381,"lng":-81.497182},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"West
+        Brookfield","county":"Stark County","state":"OH","zip":"44646","country":"US"},"formatted_address":"West
+        Brookfield, OH 44646","location":{"lat":40.814381,"lng":-81.497182},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"Massillon","county":"Stark
+        County","state":"OH","zip":"44646","country":"US"},"formatted_address":"Massillon,
+        OH 44646","location":{"lat":40.830057,"lng":-81.515953},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}},{"address_components":{"city":"West
+        Park","county":"Stark County","state":"OH","zip":"44646","country":"US"},"formatted_address":"West
+        Park, OH 44646","location":{"lat":40.814381,"lng":-81.497182},"accuracy":0.8,"accuracy_type":"place","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 7","district_number":7,"congress_number":"115th","congress_years":"2017-2019","proportion":0.622,"current_legislator":{"bio":{"last_name":"Gibbs","first_name":"Bob","birthday":"1954-06-14","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/gibbs.house.gov","address":"2446
+        Rayburn HOB; Washington DC 20515-3507","phone":"202-225-6265","contact_form":null},"social":{"rss_url":"http:\/\/gibbs.house.gov\/rss.xml","twitter":"RepBobGibbs","facebook":"RepBobGibbs","youtube":"RepBobGibbs","youtube_id":"UC4J-kVbeE32Up-b_wTLEUmA"},"references":{"bioguide_id":"G000563","thomas_id":"02049","opensecrets_id":"N00031128","lis_id":null,"cspan_id":"1033844","govtrack_id":"412463","votesmart_id":"45466","ballotpedia_id":"Bob
+        Gibbs","washington_post_id":null,"icpsr_id":"21165","wikipedia_id":"Bob Gibbs"},"source":"Data
+        collected and aggregated by https:\/\/github.com\/unitedstates\/"}},{"name":"Congressional
+        District 16","district_number":16,"congress_number":"115th","congress_years":"2017-2019","proportion":0.376,"current_legislator":{"bio":{"last_name":"Renacci","first_name":"James","birthday":"1958-12-03","gender":"M","party":"Republican"},"contact":{"url":"https:\/\/renacci.house.gov","address":"328
+        Cannon HOB; Washington DC 20515-3516","phone":"202-225-3876","contact_form":null},"social":{"rss_url":"http:\/\/renacci.house.gov\/common\/rss\/\/index.cfm?rss=25","twitter":"RepJimRenacci","facebook":"repjimrenacci","youtube":"repjimrenacci","youtube_id":"UCHTvP1X0dgUU1lrMub4hbLw"},"references":{"bioguide_id":"R000586","thomas_id":"02048","opensecrets_id":"N00031127","lis_id":null,"cspan_id":"62686","govtrack_id":"412462","votesmart_id":"120678","ballotpedia_id":"Jim
+        Renacci","washington_post_id":null,"icpsr_id":"21164","wikipedia_id":"Jim
+        Renacci"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}}]}'
+    http_version: 
+  recorded_at: Thu, 04 Jan 2018 15:25:11 GMT
+recorded_with: VCR 4.0.0

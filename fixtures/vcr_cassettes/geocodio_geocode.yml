@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.geocod.io/v1/geocode?api_key=723d41115152d224fd74727df34727c444537f7&q=1%20Infinite%20Loop,%20Cupertino,%20CA%2095014
+    uri: http://api.geocod.io/v1.1/geocode?api_key=723d41115152d224fd74727df34727c444537f7&fields=cd&q=1%20Infinite%20Loop,%20Cupertino,%20CA%2095014
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
   response:
@@ -19,25 +19,38 @@ http_interactions:
       message: OK
     headers:
       Server:
-      - nginx/1.2.1
+      - nginx/1.12.2
       Content-Type:
       - application/json
       Transfer-Encoding:
       - chunked
-      Connection:
-      - keep-alive
+      X-Powered-By:
+      - PHP/7.1.9
       Cache-Control:
       - no-cache
       Date:
-      - Wed, 16 Apr 2014 03:24:19 GMT
+      - Thu, 04 Jan 2018 15:25:10 GMT
+      Request-Handler:
+      - api33
       Access-Control-Allow-Origin:
-      - '*'
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Expose-Headers:
+      - Request-Handler
     body:
       encoding: UTF-8
-      string: '{"input":{"address_components":{"number":"1","street":"Infinite","suffix":"Loop","city":"Cupertino","state":"CA","zip":"95014"},"formatted_address":"1
-        Infinite Loop, Cupertino, CA 95014"},"results":[{"address_components":{"number":"1","street":"Infinite","suffix":"Loop","city":"Cupertino","county":"Santa
-        Clara County","state":"CA","zip":"95014"},"formatted_address":"1 Infinite
-        Loop, Cupertino, CA 95014","location":{"lat":37.331669,"lng":-122.03074},"accuracy":1}]}'
+      string: '{"input":{"address_components":{"number":"1","street":"Infinite","suffix":"Loop","formatted_street":"Infinite
+        Loop","city":"Cupertino","state":"CA","zip":"95014","country":"US"},"formatted_address":"1
+        Infinite Loop, Cupertino, CA 95014"},"results":[{"address_components":{"number":"1","street":"Infinite","suffix":"Loop","formatted_street":"Infinite
+        Loop","city":"Cupertino","county":"Santa Clara County","state":"CA","zip":"95014","country":"US"},"formatted_address":"1
+        Infinite Loop, Cupertino, CA 95014","location":{"lat":37.330689,"lng":-122.02912},"accuracy":1,"accuracy_type":"range_interpolation","source":"TIGER\/Line\u00ae
+        dataset from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 17","district_number":17,"congress_number":"115th","congress_years":"2017-2019","proportion":1,"current_legislator":{"bio":{"last_name":"Khanna","first_name":"Ro","birthday":"1976-09-13","gender":"M","party":"Democrat"},"contact":{"url":"https:\/\/khanna.house.gov","address":"513
+        Cannon HOB; Washington DC 20515-0517","phone":"202-225-2631","contact_form":null},"social":{"rss_url":null,"twitter":"RepRoKhanna","facebook":"RepRoKhanna","youtube":null,"youtube_id":"UCr4KOYv1o1oEQhy1jhhm3pQ"},"references":{"bioguide_id":"K000389","thomas_id":null,"opensecrets_id":"N00026427","lis_id":null,"cspan_id":"31129","govtrack_id":"412684","votesmart_id":"29473","ballotpedia_id":null,"washington_post_id":null,"icpsr_id":"21728","wikipedia_id":"Ro
+        Khanna"},"source":"Data collected and aggregated by https:\/\/github.com\/unitedstates\/"}}]}}]}'
     http_version: 
-  recorded_at: Wed, 16 Apr 2014 03:24:19 GMT
-recorded_with: VCR 2.9.0
+  recorded_at: Thu, 04 Jan 2018 15:25:10 GMT
+recorded_with: VCR 4.0.0
